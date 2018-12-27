@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 class App extends React.Component {
   state = {
@@ -24,7 +25,7 @@ class App extends React.Component {
       <div>
         <header>{this.state.err}</header>
         <div className="container">
-          <textarea onChange={this.update} defaultValue={this.state.input} />
+          <textarea onChange={this.update} placeholder={this.state.input} />
           <pre>{this.state.output}</pre>
         </div>
       </div>
